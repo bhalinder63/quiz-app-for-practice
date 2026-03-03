@@ -37,5 +37,6 @@ function historyApi() {
 }
 
 export default defineConfig({
+  base: '/quiz-app-for-practice/',
   plugins: [react(), historyApi()],
 })
