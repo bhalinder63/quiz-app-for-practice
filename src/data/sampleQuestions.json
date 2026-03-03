@@ -1,0 +1,1043 @@
+[
+  {
+    "id": 1,
+    "question": "What does AI stand for?",
+    "options": [
+      "Automated Internet",
+      "Artificial Intelligence",
+      "Advanced Integration",
+      "Algorithmic Interface"
+    ],
+    "answer": "Artificial Intelligence"
+  },
+  {
+    "id": 2,
+    "question": "Machine Learning is a subset of:",
+    "options": [
+      "Cybersecurity",
+      "Artificial Intelligence",
+      "Databases",
+      "Operating Systems"
+    ],
+    "answer": "Artificial Intelligence"
+  },
+  {
+    "id": 3,
+    "question": "Which type of learning uses labeled data?",
+    "options": [
+      "Unsupervised Learning",
+      "Reinforcement Learning",
+      "Supervised Learning",
+      "Self Learning"
+    ],
+    "answer": "Supervised Learning"
+  },
+  {
+    "id": 4,
+    "question": "Which type of learning does not require labeled data?",
+    "options": [
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Regression",
+      "Classification"
+    ],
+    "answer": "Unsupervised Learning"
+  },
+  {
+    "id": 5,
+    "question": "Which of the following is a supervised learning task?",
+    "options": [
+      "Clustering",
+      "Dimensionality Reduction",
+      "Classification",
+      "Anomaly Exploration"
+    ],
+    "answer": "Classification"
+  },
+  {
+    "id": 6,
+    "question": "Which algorithm is commonly used for regression?",
+    "options": ["Linear Regression", "K-Means", "Apriori", "PCA"],
+    "answer": "Linear Regression"
+  },
+  {
+    "id": 7,
+    "question": "Deep Learning mainly uses:",
+    "options": [
+      "Decision Trees",
+      "Neural Networks",
+      "Spreadsheets",
+      "Sorting Algorithms"
+    ],
+    "answer": "Neural Networks"
+  },
+  {
+    "id": 8,
+    "question": "What is a neural network inspired by?",
+    "options": [
+      "Internet cables",
+      "Human brain structure",
+      "Database tables",
+      "Operating systems"
+    ],
+    "answer": "Human brain structure"
+  },
+  {
+    "id": 9,
+    "question": "Which metric is commonly used for classification accuracy?",
+    "options": ["Mean Squared Error", "Accuracy", "Variance", "Entropy Only"],
+    "answer": "Accuracy"
+  },
+  {
+    "id": 10,
+    "question": "Overfitting occurs when a model:",
+    "options": [
+      "Performs well on training but poorly on new data",
+      "Performs poorly everywhere",
+      "Has too little data",
+      "Uses no parameters"
+    ],
+    "answer": "Performs well on training but poorly on new data"
+  },
+  {
+    "id": 11,
+    "question": "Underfitting occurs when a model:",
+    "options": [
+      "Is too complex",
+      "Is too simple to capture patterns",
+      "Has too much data",
+      "Uses attention mechanism"
+    ],
+    "answer": "Is too simple to capture patterns"
+  },
+  {
+    "id": 12,
+    "question": "A dataset is typically split into:",
+    "options": [
+      "Input and Output only",
+      "Training and Testing sets",
+      "GPU and CPU",
+      "Prompt and Response"
+    ],
+    "answer": "Training and Testing sets"
+  },
+  {
+    "id": 13,
+    "question": "Gradient descent is used to:",
+    "options": [
+      "Increase loss",
+      "Optimize model parameters",
+      "Reduce dataset size",
+      "Increase tokens"
+    ],
+    "answer": "Optimize model parameters"
+  },
+  {
+    "id": 14,
+    "question": "Loss function measures:",
+    "options": [
+      "Internet speed",
+      "Model error",
+      "GPU temperature",
+      "Token count"
+    ],
+    "answer": "Model error"
+  },
+  {
+    "id": 15,
+    "question": "Which is a classification problem?",
+    "options": [
+      "Predict house price",
+      "Predict temperature",
+      "Spam or Not Spam",
+      "Stock price prediction"
+    ],
+    "answer": "Spam or Not Spam"
+  },
+  {
+    "id": 16,
+    "question": "Which is a regression problem?",
+    "options": [
+      "Cat vs Dog",
+      "Email spam detection",
+      "Predicting salary",
+      "Image segmentation"
+    ],
+    "answer": "Predicting salary"
+  },
+  {
+    "id": 17,
+    "question": "Reinforcement learning is based on:",
+    "options": [
+      "Rewards and penalties",
+      "Labels only",
+      "Clustering",
+      "Sorting"
+    ],
+    "answer": "Rewards and penalties"
+  },
+  {
+    "id": 18,
+    "question": "Epoch in ML means:",
+    "options": [
+      "One forward pass only",
+      "One full pass through training data",
+      "One GPU cycle",
+      "One token"
+    ],
+    "answer": "One full pass through training data"
+  },
+  {
+    "id": 19,
+    "question": "Batch size refers to:",
+    "options": [
+      "Total dataset size",
+      "Number of samples processed before updating weights",
+      "Number of tokens",
+      "Model size"
+    ],
+    "answer": "Number of samples processed before updating weights"
+  },
+  {
+    "id": 20,
+    "question": "Activation functions introduce:",
+    "options": ["Linearity", "Randomness", "Non-linearity", "Memory"],
+    "answer": "Non-linearity"
+  },
+  {
+    "id": 21,
+    "question": "ReLU stands for:",
+    "options": [
+      "Random Linear Unit",
+      "Rectified Linear Unit",
+      "Recursive Learning Unit",
+      "Reinforced Learning Unit"
+    ],
+    "answer": "Rectified Linear Unit"
+  },
+  {
+    "id": 22,
+    "question": "Sigmoid output range is:",
+    "options": ["0 to 1", "-1 to 1", "0 to infinity", "-infinity to infinity"],
+    "answer": "0 to 1"
+  },
+  {
+    "id": 23,
+    "question": "Which is used for multi-class classification?",
+    "options": ["Softmax", "ReLU", "Linear", "Tanh only"],
+    "answer": "Softmax"
+  },
+  {
+    "id": 24,
+    "question": "Backpropagation computes:",
+    "options": ["Tokens", "Gradients", "Internet speed", "Dataset size"],
+    "answer": "Gradients"
+  },
+  {
+    "id": 25,
+    "question": "Deep neural networks differ from shallow networks mainly by:",
+    "options": [
+      "More tokens",
+      "More layers",
+      "More internet speed",
+      "Less parameters"
+    ],
+    "answer": "More layers"
+  },
+  {
+    "id": 26,
+    "question": "What is a token in large language models?",
+    "options": [
+      "A full paragraph",
+      "A unit of text such as word, subword, or character",
+      "A sentence only",
+      "A dataset"
+    ],
+    "answer": "A unit of text such as word, subword, or character"
+  },
+  {
+    "id": 27,
+    "question": "Why do LLMs use subword tokenization?",
+    "options": [
+      "To reduce GPU heat",
+      "To handle rare and unknown words efficiently",
+      "To remove punctuation",
+      "To eliminate embeddings"
+    ],
+    "answer": "To handle rare and unknown words efficiently"
+  },
+  {
+    "id": 28,
+    "question": "Tokenization happens:",
+    "options": [
+      "After training",
+      "Before model processes input",
+      "During backpropagation",
+      "After inference"
+    ],
+    "answer": "Before model processes input"
+  },
+  {
+    "id": 29,
+    "question": "Context window size refers to:",
+    "options": [
+      "Number of neurons",
+      "Maximum tokens model can process at once",
+      "Batch size",
+      "Learning rate"
+    ],
+    "answer": "Maximum tokens model can process at once"
+  },
+  {
+    "id": 30,
+    "question": "Longer prompts generally:",
+    "options": [
+      "Decrease token usage",
+      "Increase token usage",
+      "Do not affect cost",
+      "Reduce parameters"
+    ],
+    "answer": "Increase token usage"
+  },
+  {
+    "id": 31,
+    "question": "API pricing for LLMs is typically based on:",
+    "options": [
+      "Number of GPUs",
+      "Model size only",
+      "Number of tokens used",
+      "Internet speed"
+    ],
+    "answer": "Number of tokens used"
+  },
+  {
+    "id": 32,
+    "question": "Tokens are converted into:",
+    "options": [
+      "Images",
+      "Embeddings (vectors of numbers)",
+      "HTML files",
+      "Binary trees"
+    ],
+    "answer": "Embeddings (vectors of numbers)"
+  },
+  {
+    "id": 33,
+    "question": "If token limit is exceeded:",
+    "options": [
+      "Model retrains",
+      "Request fails or gets truncated",
+      "GPU upgrades",
+      "Loss becomes zero"
+    ],
+    "answer": "Request fails or gets truncated"
+  },
+  {
+    "id": 34,
+    "question": "Emojis in text:",
+    "options": [
+      "Do not count as tokens",
+      "Are tokenized like other characters",
+      "Crash the model",
+      "Are ignored"
+    ],
+    "answer": "Are tokenized like other characters"
+  },
+  {
+    "id": 35,
+    "question": "Reducing unnecessary words in prompt:",
+    "options": [
+      "Saves tokens",
+      "Increases tokens",
+      "Changes parameters",
+      "Reduces attention heads"
+    ],
+    "answer": "Saves tokens"
+  },
+  {
+    "id": 36,
+    "question": "Model parameters are:",
+    "options": [
+      "Training examples",
+      "Learned weights and biases",
+      "Hyperparameters",
+      "Token IDs"
+    ],
+    "answer": "Learned weights and biases"
+  },
+  {
+    "id": 37,
+    "question": "A 13B model refers to:",
+    "options": [
+      "13 billion tokens",
+      "13 billion parameters",
+      "13 billion neurons",
+      "13 billion layers"
+    ],
+    "answer": "13 billion parameters"
+  },
+  {
+    "id": 38,
+    "question": "Parameters are updated during:",
+    "options": [
+      "Inference",
+      "Backpropagation",
+      "Tokenization",
+      "Prompt writing"
+    ],
+    "answer": "Backpropagation"
+  },
+  {
+    "id": 39,
+    "question": "Learning rate is a:",
+    "options": ["Parameter", "Token", "Hyperparameter", "Dataset"],
+    "answer": "Hyperparameter"
+  },
+  {
+    "id": 40,
+    "question": "Embedding matrix is considered:",
+    "options": [
+      "A hyperparameter",
+      "A trainable parameter",
+      "A dataset",
+      "A tokenizer"
+    ],
+    "answer": "A trainable parameter"
+  },
+  {
+    "id": 41,
+    "question": "Increasing parameter count generally:",
+    "options": [
+      "Increases model capacity",
+      "Reduces GPU usage",
+      "Eliminates need for data",
+      "Removes overfitting risk"
+    ],
+    "answer": "Increases model capacity"
+  },
+  {
+    "id": 42,
+    "question": "Overfitting often occurs when:",
+    "options": [
+      "Model is too simple",
+      "Model memorizes training data",
+      "Dataset is huge",
+      "Learning rate is zero"
+    ],
+    "answer": "Model memorizes training data"
+  },
+  {
+    "id": 43,
+    "question": "During inference, parameters:",
+    "options": [
+      "Continue updating",
+      "Are frozen",
+      "Are deleted",
+      "Are randomized"
+    ],
+    "answer": "Are frozen"
+  },
+  {
+    "id": 44,
+    "question": "1 billion parameters stored in float32 require approximately:",
+    "options": ["400 MB", "4 GB", "40 GB", "1 TB"],
+    "answer": "4 GB"
+  },
+  {
+    "id": 45,
+    "question": "Fine-tuning mainly involves:",
+    "options": [
+      "Changing architecture",
+      "Updating existing parameters on new data",
+      "Removing tokens",
+      "Changing optimizer only"
+    ],
+    "answer": "Updating existing parameters on new data"
+  },
+  {
+    "id": 46,
+    "question": "Bias term in neural networks is:",
+    "options": [
+      "A hyperparameter",
+      "A dataset",
+      "A trainable parameter",
+      "A token"
+    ],
+    "answer": "A trainable parameter"
+  },
+  {
+    "id": 47,
+    "question": "Gradient descent is used to update:",
+    "options": ["Tokens", "Parameters", "Prompts", "Batch size"],
+    "answer": "Parameters"
+  },
+  {
+    "id": 48,
+    "question": "More parameters require:",
+    "options": [
+      "Less GPU memory",
+      "More GPU memory",
+      "Less computation",
+      "Less storage"
+    ],
+    "answer": "More GPU memory"
+  },
+  {
+    "id": 49,
+    "question": "Scaling laws suggest that:",
+    "options": [
+      "Model size has no effect",
+      "Bigger models often perform better with more data",
+      "Smaller models are always superior",
+      "Tokens determine intelligence"
+    ],
+    "answer": "Bigger models often perform better with more data"
+  },
+  {
+    "id": 50,
+    "question": "Hyperparameters are set:",
+    "options": [
+      "Before training",
+      "Automatically by tokens",
+      "During inference",
+      "After deployment"
+    ],
+    "answer": "Before training"
+  },
+
+  {
+    "id": 51,
+    "question": "Attention mechanism was introduced to solve:",
+    "options": [
+      "GPU overheating",
+      "Long-range dependency problems in sequences",
+      "Tokenization errors",
+      "Dataset imbalance"
+    ],
+    "answer": "Long-range dependency problems in sequences"
+  },
+  {
+    "id": 52,
+    "question": "Self-attention allows each token to:",
+    "options": [
+      "Ignore other tokens",
+      "Interact with all other tokens in the sequence",
+      "Look only at the previous token",
+      "Update parameters"
+    ],
+    "answer": "Interact with all other tokens in the sequence"
+  },
+  {
+    "id": 53,
+    "question": "The Transformer model was introduced in which paper?",
+    "options": [
+      "Deep Residual Learning",
+      "Attention Is All You Need",
+      "Neural Networks Explained",
+      "GPT Foundations"
+    ],
+    "answer": "Attention Is All You Need"
+  },
+  {
+    "id": 54,
+    "question": "Q, K, V in attention stand for:",
+    "options": [
+      "Query, Key, Value",
+      "Question, Kernel, Vector",
+      "Queue, Key, Variable",
+      "Quick, Known, Value"
+    ],
+    "answer": "Query, Key, Value"
+  },
+  {
+    "id": 55,
+    "question": "Attention scores are computed using:",
+    "options": [
+      "Addition",
+      "Dot product between Query and Key",
+      "Subtraction",
+      "Random weights"
+    ],
+    "answer": "Dot product between Query and Key"
+  },
+  {
+    "id": 56,
+    "question": "Softmax in attention is used to:",
+    "options": [
+      "Normalize attention weights",
+      "Remove tokens",
+      "Freeze parameters",
+      "Reduce model size"
+    ],
+    "answer": "Normalize attention weights"
+  },
+  {
+    "id": 57,
+    "question": "Why do we divide by sqrt(dk) in scaled dot-product attention?",
+    "options": [
+      "To increase training speed",
+      "To prevent very large dot product values",
+      "To reduce tokens",
+      "To reduce parameters"
+    ],
+    "answer": "To prevent very large dot product values"
+  },
+  {
+    "id": 58,
+    "question": "Multi-head attention allows the model to:",
+    "options": [
+      "Use multiple GPUs",
+      "Focus on different types of relationships simultaneously",
+      "Increase batch size",
+      "Reduce memory"
+    ],
+    "answer": "Focus on different types of relationships simultaneously"
+  },
+  {
+    "id": 59,
+    "question": "Self-attention computational complexity is approximately:",
+    "options": ["O(n)", "O(log n)", "O(n²)", "O(1)"],
+    "answer": "O(n²)"
+  },
+  {
+    "id": 60,
+    "question": "Attention enables:",
+    "options": [
+      "Sequential-only processing",
+      "Parallel processing of tokens",
+      "Removal of embeddings",
+      "Elimination of parameters"
+    ],
+    "answer": "Parallel processing of tokens"
+  },
+  {
+    "id": 61,
+    "question": "In causal (masked) attention, a token:",
+    "options": [
+      "Can see future tokens",
+      "Cannot see future tokens",
+      "Ignores past tokens",
+      "Ignores itself"
+    ],
+    "answer": "Cannot see future tokens"
+  },
+  {
+    "id": 62,
+    "question": "GPT models use:",
+    "options": [
+      "Bidirectional attention",
+      "Encoder-decoder attention",
+      "Masked self-attention",
+      "RNN attention"
+    ],
+    "answer": "Masked self-attention"
+  },
+  {
+    "id": 63,
+    "question": "BERT primarily uses:",
+    "options": [
+      "Causal attention",
+      "Bidirectional attention",
+      "No attention",
+      "CNN attention"
+    ],
+    "answer": "Bidirectional attention"
+  },
+  {
+    "id": 64,
+    "question": "Attention weights represent:",
+    "options": [
+      "Dataset size",
+      "Importance scores between tokens",
+      "Hyperparameters",
+      "Batch size"
+    ],
+    "answer": "Importance scores between tokens"
+  },
+  {
+    "id": 65,
+    "question": "The attention matrix size for sequence length n is approximately:",
+    "options": ["n", "n × n", "log n", "1"],
+    "answer": "n × n"
+  },
+  {
+    "id": 66,
+    "question": "Increasing sequence length increases attention cost:",
+    "options": ["Linearly", "Quadratically", "Exponentially", "Not at all"],
+    "answer": "Quadratically"
+  },
+  {
+    "id": 67,
+    "question": "Positional encoding is necessary because:",
+    "options": [
+      "Attention has no built-in sense of order",
+      "GPU requires it",
+      "Tokens are random",
+      "Parameters need it"
+    ],
+    "answer": "Attention has no built-in sense of order"
+  },
+  {
+    "id": 68,
+    "question": "In Transformer architecture, attention is followed by:",
+    "options": [
+      "Convolution layer only",
+      "Feed-forward neural network",
+      "Pooling layer",
+      "Decision tree"
+    ],
+    "answer": "Feed-forward neural network"
+  },
+  {
+    "id": 69,
+    "question": "Layer normalization in Transformers helps:",
+    "options": [
+      "Stabilize training",
+      "Reduce tokens",
+      "Increase dataset size",
+      "Remove bias"
+    ],
+    "answer": "Stabilize training"
+  },
+  {
+    "id": 70,
+    "question": "Residual connections help:",
+    "options": [
+      "Avoid vanishing gradients",
+      "Increase token count",
+      "Delete parameters",
+      "Reduce attention heads"
+    ],
+    "answer": "Avoid vanishing gradients"
+  },
+  {
+    "id": 71,
+    "question": "Encoder-decoder attention is mainly used in:",
+    "options": [
+      "Translation models",
+      "Image classification only",
+      "Clustering",
+      "Sorting algorithms"
+    ],
+    "answer": "Translation models"
+  },
+  {
+    "id": 72,
+    "question": "Attention mechanism replaces which older sequence model?",
+    "options": [
+      "CNN",
+      "RNN/LSTM-based sequential dependency models",
+      "Linear regression",
+      "Decision trees"
+    ],
+    "answer": "RNN/LSTM-based sequential dependency models"
+  },
+  {
+    "id": 73,
+    "question": "Each attention head has its own:",
+    "options": [
+      "Dataset",
+      "Query, Key, and Value projections",
+      "Token list",
+      "Learning rate"
+    ],
+    "answer": "Query, Key, and Value projections"
+  },
+  {
+    "id": 74,
+    "question": "After multi-head attention outputs are:",
+    "options": [
+      "Discarded",
+      "Concatenated and projected",
+      "Randomized",
+      "Tokenized again"
+    ],
+    "answer": "Concatenated and projected"
+  },
+  {
+    "id": 75,
+    "question": "Without attention, Transformers would:",
+    "options": [
+      "Still model long-range dependencies effectively",
+      "Lose their core mechanism for contextual understanding",
+      "Become CNNs",
+      "Become unsupervised clustering models"
+    ],
+    "answer": "Lose their core mechanism for contextual understanding"
+  },
+  {
+    "id": 76,
+    "question": "Perplexity in language models measures:",
+    "options": [
+      "Model size",
+      "How well a probability model predicts a sample",
+      "Token count",
+      "GPU speed"
+    ],
+    "answer": "How well a probability model predicts a sample"
+  },
+  {
+    "id": 77,
+    "question": "Lower perplexity generally indicates:",
+    "options": [
+      "Worse model performance",
+      "Better predictive performance",
+      "More parameters",
+      "Higher token usage"
+    ],
+    "answer": "Better predictive performance"
+  },
+  {
+    "id": 78,
+    "question": "In LLMs, embeddings represent:",
+    "options": [
+      "Raw tokens",
+      "Numerical vector representations of tokens",
+      "Hyperparameters",
+      "Datasets"
+    ],
+    "answer": "Numerical vector representations of tokens"
+  },
+  {
+    "id": 79,
+    "question": "Fine-tuning differs from pretraining because it:",
+    "options": [
+      "Starts from random weights",
+      "Uses already trained parameters",
+      "Removes attention",
+      "Reduces layers"
+    ],
+    "answer": "Uses already trained parameters"
+  },
+  {
+    "id": 80,
+    "question": "Instruction tuning mainly improves:",
+    "options": [
+      "GPU speed",
+      "Model alignment to user tasks",
+      "Tokenization method",
+      "Parameter count"
+    ],
+    "answer": "Model alignment to user tasks"
+  },
+  {
+    "id": 81,
+    "question": "Temperature in LLM inference controls:",
+    "options": [
+      "Hardware heat",
+      "Randomness of output distribution",
+      "Number of parameters",
+      "Token length"
+    ],
+    "answer": "Randomness of output distribution"
+  },
+  {
+    "id": 82,
+    "question": "Top-k sampling selects:",
+    "options": [
+      "All tokens",
+      "Only k highest probability tokens",
+      "Lowest probability tokens",
+      "Random dataset"
+    ],
+    "answer": "Only k highest probability tokens"
+  },
+  {
+    "id": 83,
+    "question": "Top-p (nucleus) sampling selects tokens based on:",
+    "options": [
+      "Fixed token count",
+      "Cumulative probability threshold",
+      "Parameter size",
+      "Batch size"
+    ],
+    "answer": "Cumulative probability threshold"
+  },
+  {
+    "id": 84,
+    "question": "Zero-shot learning means:",
+    "options": [
+      "Training with zero data",
+      "Model performs task without task-specific training examples",
+      "No parameters",
+      "No tokens"
+    ],
+    "answer": "Model performs task without task-specific training examples"
+  },
+  {
+    "id": 85,
+    "question": "Few-shot prompting provides:",
+    "options": [
+      "No examples",
+      "A small number of task examples in prompt",
+      "Large dataset retraining",
+      "More parameters"
+    ],
+    "answer": "A small number of task examples in prompt"
+  },
+  {
+    "id": 86,
+    "question": "Hallucination in LLMs refers to:",
+    "options": [
+      "Model hardware error",
+      "Generating incorrect but confident information",
+      "Token overflow",
+      "Parameter deletion"
+    ],
+    "answer": "Generating incorrect but confident information"
+  },
+  {
+    "id": 87,
+    "question": "Model quantization reduces:",
+    "options": [
+      "Model accuracy always",
+      "Parameter precision to reduce memory usage",
+      "Token size",
+      "Attention heads"
+    ],
+    "answer": "Parameter precision to reduce memory usage"
+  },
+  {
+    "id": 88,
+    "question": "Pruning in neural networks aims to:",
+    "options": [
+      "Increase parameters",
+      "Remove less important weights",
+      "Add attention heads",
+      "Increase tokens"
+    ],
+    "answer": "Remove less important weights"
+  },
+  {
+    "id": 89,
+    "question": "Transfer learning is useful because:",
+    "options": [
+      "It deletes previous knowledge",
+      "It leverages pretrained knowledge for new tasks",
+      "It reduces dataset to zero",
+      "It removes embeddings"
+    ],
+    "answer": "It leverages pretrained knowledge for new tasks"
+  },
+  {
+    "id": 90,
+    "question": "Self-supervised learning in LLMs commonly predicts:",
+    "options": [
+      "Random noise",
+      "Next token in sequence",
+      "GPU temperature",
+      "Batch size"
+    ],
+    "answer": "Next token in sequence"
+  },
+  {
+    "id": 91,
+    "question": "Causal language modeling predicts:",
+    "options": [
+      "Previous token",
+      "Next token given previous context",
+      "Entire paragraph randomly",
+      "Dataset labels"
+    ],
+    "answer": "Next token given previous context"
+  },
+  {
+    "id": 92,
+    "question": "Bidirectional models like BERT are good for:",
+    "options": [
+      "Text generation",
+      "Understanding context from both directions",
+      "Reducing parameters",
+      "Token counting"
+    ],
+    "answer": "Understanding context from both directions"
+  },
+  {
+    "id": 93,
+    "question": "Model capacity depends mainly on:",
+    "options": [
+      "Token color",
+      "Parameter count and architecture",
+      "Internet speed",
+      "Prompt length only"
+    ],
+    "answer": "Parameter count and architecture"
+  },
+  {
+    "id": 94,
+    "question": "Gradient vanishing problem is common in:",
+    "options": [
+      "Shallow networks",
+      "Deep sequential networks like RNNs",
+      "Tokenizers",
+      "Datasets"
+    ],
+    "answer": "Deep sequential networks like RNNs"
+  },
+  {
+    "id": 95,
+    "question": "Attention helps mitigate vanishing gradients because:",
+    "options": [
+      "It removes gradients",
+      "It provides direct connections between tokens",
+      "It reduces tokens",
+      "It reduces dataset size"
+    ],
+    "answer": "It provides direct connections between tokens"
+  },
+  {
+    "id": 96,
+    "question": "Large context windows primarily improve:",
+    "options": [
+      "Hardware durability",
+      "Ability to handle long documents",
+      "Parameter size",
+      "Learning rate"
+    ],
+    "answer": "Ability to handle long documents"
+  },
+  {
+    "id": 97,
+    "question": "During inference, no gradients are computed because:",
+    "options": [
+      "Model is frozen",
+      "Training is happening",
+      "Tokenization fails",
+      "Attention disabled"
+    ],
+    "answer": "Model is frozen"
+  },
+  {
+    "id": 98,
+    "question": "Attention weights are learned via:",
+    "options": [
+      "Manual rules",
+      "Backpropagation",
+      "Token sorting",
+      "Hard coding"
+    ],
+    "answer": "Backpropagation"
+  },
+  {
+    "id": 99,
+    "question": "Scaling laws suggest performance improves with:",
+    "options": [
+      "More data, parameters, and compute",
+      "Fewer tokens",
+      "Lower batch size only",
+      "Short prompts"
+    ],
+    "answer": "More data, parameters, and compute"
+  },
+  {
+    "id": 100,
+    "question": "The core breakthrough of modern LLMs is combining:",
+    "options": [
+      "Attention mechanism, large-scale data, and massive parameters",
+      "Small datasets and CNNs",
+      "Decision trees and tokens",
+      "Manual rule-based systems"
+    ],
+    "answer": "Attention mechanism, large-scale data, and massive parameters"
+  }
+]
