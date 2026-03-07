@@ -38,7 +38,7 @@ export default function Results({ quizTitle, playerName, questions, answers, goo
       date: new Date().toLocaleString(),
     };
 
-    fetch('/api/history', {
+    fetch(new URL('/api/history', window.location.origin).href, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
@@ -48,7 +48,7 @@ export default function Results({ quizTitle, playerName, questions, answers, goo
       fetch(googleSheetUrl, {
         method: 'POST',
         mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'text/plain' },
         body: JSON.stringify(payload),
       }).catch(() => {});
     }
