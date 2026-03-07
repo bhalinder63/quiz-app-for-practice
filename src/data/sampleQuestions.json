@@ -1,52 +1,52 @@
 [
   {
-    "id": 26,
-    "question": "What does the term 'parameter' refer to in machine learning models?",
+    "id": 31,
+    "question": "In machine learning, what are parameters?",
     "options": [
-      "A fixed rule written by a programmer",
-      "A value learned by the model during training",
-      "The number of datasets used",
-      "The size of the internet connection"
+      "Values learned by a model during training",
+      "The size of the dataset",
+      "The number of tokens in a sentence",
+      "The speed of the GPU"
     ],
-    "answer": "A value learned by the model during training"
+    "answer": "Values learned by a model during training"
   },
   {
-    "id": 27,
-    "question": "In large language models, what is the main purpose of the attention mechanism?",
+    "id": 32,
+    "question": "In a neural network, which of the following are considered parameters?",
     "options": [
-      "To increase internet speed",
-      "To focus on important words in a sequence when generating output",
-      "To reduce the number of tokens",
-      "To remove training data"
+      "Weights and biases",
+      "Learning rate",
+      "Batch size",
+      "Number of epochs"
     ],
-    "answer": "To focus on important words in a sequence when generating output"
+    "answer": "Weights and biases"
   },
   {
-    "id": 28,
-    "question": "What is overfitting in machine learning?",
+    "id": 33,
+    "question": "What usually happens when a model has more parameters?",
     "options": [
-      "When a model learns the training data too well and performs poorly on new data",
-      "When a model has too few parameters",
-      "When training stops early",
-      "When the dataset is too small to load"
+      "It can learn more complex patterns",
+      "It always trains faster",
+      "It requires less data",
+      "It removes the need for training"
     ],
-    "answer": "When a model learns the training data too well and performs poorly on new data"
+    "answer": "It can learn more complex patterns"
   },
   {
-    "id": 29,
-    "question": "Which component of a neural network introduces non-linearity?",
-    "options": ["Activation function", "Dataset", "Tokenizer", "Batch size"],
-    "answer": "Activation function"
+    "id": 34,
+    "question": "What is the approximate number of parameters in GPT-3?",
+    "options": ["175 million", "175 billion", "17 billion", "1.75 trillion"],
+    "answer": "175 billion"
   },
   {
-    "id": 30,
-    "question": "What is the role of a tokenizer in large language models?",
+    "id": 35,
+    "question": "During training, how are model parameters updated?",
     "options": [
-      "To convert text into tokens that the model can process",
-      "To compress images",
-      "To increase GPU speed",
-      "To delete unnecessary data"
+      "By gradient descent optimization",
+      "By increasing internet speed",
+      "By adding more tokens",
+      "By deleting training data"
     ],
-    "answer": "To convert text into tokens that the model can process"
+    "answer": "By gradient descent optimization"
   }
 ]
