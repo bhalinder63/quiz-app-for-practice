@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import StartScreen from './components/StartScreen';
 import Quiz from './components/Quiz';
 import Results from './components/Results';
@@ -11,6 +11,12 @@ const questions = sampleQuestions.map((q, i) => ({ ...q, id: q.id ?? i + 1 }));
 export default function App() {
   const [playerName, setPlayerName] = useState(null);
   const [answers, setAnswers] = useState(null);
+  const [dark, setDark] = useState(() => localStorage.getItem('theme') === 'dark');
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+  }, [dark]);
 
   function handleStart(name) {
     setPlayerName(name);
@@ -25,9 +31,16 @@ export default function App() {
     setAnswers(null);
   }
 
+  const toggle = (
+    <button className="theme-toggle" onClick={() => setDark((d) => !d)} title="Toggle theme">
+      {dark ? '☀︎' : '☾'}
+    </button>
+  );
+
   if (!playerName) {
     return (
       <div className="app">
+        {toggle}
         <StartScreen
           quizTitle={quizConfig.title}
           totalQuestions={questions.length}
@@ -40,6 +53,7 @@ export default function App() {
   if (answers) {
     return (
       <div className="app">
+        {toggle}
         <Results
           quizTitle={quizConfig.title}
           playerName={playerName}
@@ -54,6 +68,7 @@ export default function App() {
 
   return (
     <div className="app">
+      {toggle}
       <h1 className="app-title">{quizConfig.title}</h1>
       <p className="app-subtitle">{playerName} &middot; {questions.length} Questions</p>
       <Quiz questions={questions} onFinish={handleFinish} />
