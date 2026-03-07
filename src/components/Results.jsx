@@ -1,30 +1,48 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useMemo } from 'react';
 
 export default function Results({ quizTitle, playerName, questions, answers, googleSheetUrl, onRestart }) {
   const saved = useRef(false);
   const total = questions.length;
-  let correct = 0;
-  const incorrect = [];
 
-  questions.forEach((q) => {
-    if (answers[q.id] === q.answer) {
-      correct++;
-    } else {
-      incorrect.push({
+  const { correct, incorrect, details, percentage } = useMemo(() => {
+    let correctCount = 0;
+    const incorrectList = [];
+    const detailList = [];
+
+    questions.forEach((q, i) => {
+      const userAnswer = answers[q.id] ?? '(not answered)';
+      const isCorrect = userAnswer === q.answer;
+      if (isCorrect) {
+        correctCount++;
+      } else {
+        incorrectList.push({
+          question: q.question,
+          yourAnswer: userAnswer,
+          correctAnswer: q.answer,
+        });
+      }
+      detailList.push({
+        qNo: i + 1,
         question: q.question,
-        yourAnswer: answers[q.id] ?? '(not answered)',
+        userAnswer,
         correctAnswer: q.answer,
+        result: isCorrect ? 'Correct' : 'Wrong',
       });
-    }
-  });
+    });
 
-  const percentage = Math.round((correct / total) * 100);
+    return {
+      correct: correctCount,
+      incorrect: incorrectList,
+      details: detailList,
+      percentage: Math.round((correctCount / questions.length) * 100),
+    };
+  }, [questions, answers]);
 
   let grade;
-  if (percentage >= 90) grade = 'excellent';
-  else if (percentage >= 70) grade = 'good';
-  else if (percentage >= 50) grade = 'average';
-  else grade = 'poor';
+  if (percentage >= 90) grade = 'Excellent';
+  else if (percentage >= 70) grade = 'Good';
+  else if (percentage >= 50) grade = 'Average';
+  else grade = 'Poor';
 
   useEffect(() => {
     if (saved.current) return;
@@ -35,7 +53,11 @@ export default function Results({ quizTitle, playerName, questions, answers, goo
       quiz: quizTitle,
       score: `${correct}/${total}`,
       percentage,
+      grade,
+      correct,
+      incorrect: total - correct,
       date: new Date().toLocaleString(),
+      details,
     };
 
     fetch(new URL('/api/history', window.location.origin).href, {
@@ -52,14 +74,16 @@ export default function Results({ quizTitle, playerName, questions, answers, goo
         body: JSON.stringify(payload),
       }).catch(() => {});
     }
-  }, [playerName, quizTitle, correct, total, percentage, googleSheetUrl]);
+  }, [playerName, quizTitle, correct, total, percentage, grade, googleSheetUrl, details]);
+
+  const gradeClass = grade.toLowerCase();
 
   return (
     <div className="results-container">
       <h2 className="results-title">Quiz Complete!</h2>
       <p className="results-player">{playerName}</p>
 
-      <div className={`score-card ${grade}`}>
+      <div className={`score-card ${gradeClass}`}>
         <div className="score-circle">
           <span className="score-number">{percentage}%</span>
         </div>
