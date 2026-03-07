@@ -45,6 +45,7 @@ export default function App() {
           playerName={playerName}
           questions={questions}
           answers={answers}
+          googleSheetUrl={quizConfig.googleSheetUrl}
           onRestart={handleRestart}
         />
       </div>

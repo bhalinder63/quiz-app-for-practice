@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-export default function Results({ quizTitle, playerName, questions, answers, onRestart }) {
+export default function Results({ quizTitle, playerName, questions, answers, googleSheetUrl, onRestart }) {
   const saved = useRef(false);
   const total = questions.length;
   let correct = 0;
@@ -30,18 +30,29 @@ export default function Results({ quizTitle, playerName, questions, answers, onR
     if (saved.current) return;
     saved.current = true;
 
+    const payload = {
+      name: playerName,
+      quiz: quizTitle,
+      score: `${correct}/${total}`,
+      percentage,
+      date: new Date().toLocaleString(),
+    };
+
     fetch('/api/history', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: playerName,
-        quiz: quizTitle,
-        score: `${correct}/${total}`,
-        percentage,
-        date: new Date().toLocaleString(),
-      }),
+      body: JSON.stringify(payload),
     }).catch(() => {});
-  }, [playerName, quizTitle, correct, total, percentage]);
+
+    if (googleSheetUrl) {
+      fetch(googleSheetUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      }).catch(() => {});
+    }
+  }, [playerName, quizTitle, correct, total, percentage, googleSheetUrl]);
 
   return (
     <div className="results-container">
