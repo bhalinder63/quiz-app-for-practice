@@ -1,52 +1,112 @@
 [
   {
-    "id": 31,
-    "question": "In machine learning, what are parameters?",
+    "id": 36,
+    "question": "In large language models, what is a token?",
     "options": [
-      "Values learned by a model during training",
-      "The size of the dataset",
-      "The number of tokens in a sentence",
-      "The speed of the GPU"
+      "A full paragraph of text",
+      "A unit of text such as a word, subword, or character",
+      "A complete dataset",
+      "A training algorithm"
     ],
-    "answer": "Values learned by a model during training"
+    "answer": "A unit of text such as a word, subword, or character"
   },
   {
-    "id": 32,
-    "question": "In a neural network, which of the following are considered parameters?",
+    "id": 37,
+    "question": "What is the purpose of tokenization in AI models?",
     "options": [
-      "Weights and biases",
-      "Learning rate",
-      "Batch size",
-      "Number of epochs"
+      "To convert text into tokens that the model can process",
+      "To increase GPU memory",
+      "To compress images",
+      "To delete unnecessary words"
     ],
-    "answer": "Weights and biases"
+    "answer": "To convert text into tokens that the model can process"
   },
   {
-    "id": 33,
-    "question": "What usually happens when a model has more parameters?",
+    "id": 38,
+    "question": "Which of the following could be a token?",
     "options": [
-      "It can learn more complex patterns",
-      "It always trains faster",
-      "It requires less data",
-      "It removes the need for training"
+      "A word",
+      "A part of a word",
+      "A punctuation mark",
+      "All of the above"
     ],
-    "answer": "It can learn more complex patterns"
+    "answer": "All of the above"
   },
   {
-    "id": 34,
-    "question": "What is the approximate number of parameters in GPT-3?",
-    "options": ["175 million", "175 billion", "17 billion", "1.75 trillion"],
-    "answer": "175 billion"
+    "id": 39,
+    "question": "Why do language models process tokens instead of raw text?",
+    "options": [
+      "Because models understand numbers, not raw text",
+      "Because tokens make the internet faster",
+      "Because tokens remove grammar",
+      "Because tokens store images"
+    ],
+    "answer": "Because models understand numbers, not raw text"
   },
   {
-    "id": 35,
-    "question": "During training, how are model parameters updated?",
+    "id": 40,
+    "question": "What is a tokenizer?",
     "options": [
-      "By gradient descent optimization",
-      "By increasing internet speed",
-      "By adding more tokens",
-      "By deleting training data"
+      "A tool that converts text into tokens",
+      "A neural network layer",
+      "A GPU optimization technique",
+      "A data storage method"
     ],
-    "answer": "By gradient descent optimization"
+    "answer": "A tool that converts text into tokens"
+  },
+  {
+    "id": 41,
+    "question": "Which of the following is true about tokens in LLMs?",
+    "options": [
+      "One word always equals one token",
+      "Tokens can represent full sentences only",
+      "A word can be split into multiple tokens",
+      "Tokens are only numbers"
+    ],
+    "answer": "A word can be split into multiple tokens"
+  },
+  {
+    "id": 42,
+    "question": "Why do models have a token limit?",
+    "options": [
+      "Because models can process only a limited number of tokens at once",
+      "Because tokens are stored on the internet",
+      "Because tokens are deleted after training",
+      "Because tokens slow down GPUs"
+    ],
+    "answer": "Because models can process only a limited number of tokens at once"
+  },
+  {
+    "id": 43,
+    "question": "Which type of tokenization is commonly used in modern LLMs?",
+    "options": [
+      "Subword tokenization",
+      "Paragraph tokenization",
+      "Image tokenization",
+      "File tokenization"
+    ],
+    "answer": "Subword tokenization"
+  },
+  {
+    "id": 44,
+    "question": "What happens to tokens after tokenization?",
+    "options": [
+      "They are converted into numerical IDs",
+      "They are deleted from the text",
+      "They are converted into images",
+      "They are stored as audio"
+    ],
+    "answer": "They are converted into numerical IDs"
+  },
+  {
+    "id": 45,
+    "question": "Approximately how many tokens are in one English word on average?",
+    "options": [
+      "About 1 token per word",
+      "About 5 tokens per word",
+      "About 10 tokens per word",
+      "About 50 tokens per word"
+    ],
+    "answer": "About 1 token per word"
   }
 ]
