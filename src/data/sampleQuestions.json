@@ -1,112 +1,107 @@
 [
   {
-    "id": 36,
-    "question": "In large language models, what is a token?",
+    "id": 46,
+    "question": "What is the main purpose of the attention mechanism in neural networks?",
     "options": [
-      "A full paragraph of text",
-      "A unit of text such as a word, subword, or character",
-      "A complete dataset",
-      "A training algorithm"
+      "To focus on the most relevant parts of the input data",
+      "To increase internet speed",
+      "To reduce dataset size",
+      "To remove parameters"
     ],
-    "answer": "A unit of text such as a word, subword, or character"
+    "answer": "To focus on the most relevant parts of the input data"
   },
   {
-    "id": 37,
-    "question": "What is the purpose of tokenization in AI models?",
+    "id": 47,
+    "question": "In transformers, attention helps the model understand:",
     "options": [
-      "To convert text into tokens that the model can process",
-      "To increase GPU memory",
-      "To compress images",
-      "To delete unnecessary words"
+      "Relationships between different words in a sequence",
+      "Internet bandwidth",
+      "GPU temperature",
+      "Image resolution"
     ],
-    "answer": "To convert text into tokens that the model can process"
+    "answer": "Relationships between different words in a sequence"
   },
   {
-    "id": 38,
-    "question": "Which of the following could be a token?",
-    "options": [
-      "A word",
-      "A part of a word",
-      "A punctuation mark",
-      "All of the above"
-    ],
-    "answer": "All of the above"
+    "id": 48,
+    "question": "Which architecture made the attention mechanism famous in NLP?",
+    "options": ["Transformer", "Decision Tree", "K-Means", "Naive Bayes"],
+    "answer": "Transformer"
   },
   {
-    "id": 39,
-    "question": "Why do language models process tokens instead of raw text?",
+    "id": 49,
+    "question": "Self-attention allows a model to:",
     "options": [
-      "Because models understand numbers, not raw text",
-      "Because tokens make the internet faster",
-      "Because tokens remove grammar",
-      "Because tokens store images"
+      "Look at other words in the same sentence when processing a word",
+      "Ignore all other words",
+      "Delete tokens",
+      "Increase training data"
     ],
-    "answer": "Because models understand numbers, not raw text"
+    "answer": "Look at other words in the same sentence when processing a word"
   },
   {
-    "id": 40,
-    "question": "What is a tokenizer?",
+    "id": 50,
+    "question": "Which components are used in the attention calculation?",
     "options": [
-      "A tool that converts text into tokens",
-      "A neural network layer",
-      "A GPU optimization technique",
-      "A data storage method"
+      "Query, Key, and Value",
+      "Token, Layer, and Node",
+      "CPU, GPU, and RAM",
+      "Input, Output, and File"
     ],
-    "answer": "A tool that converts text into tokens"
+    "answer": "Query, Key, and Value"
   },
   {
-    "id": 41,
-    "question": "Which of the following is true about tokens in LLMs?",
+    "id": 51,
+    "question": "What does the Query vector represent in attention?",
     "options": [
-      "One word always equals one token",
-      "Tokens can represent full sentences only",
-      "A word can be split into multiple tokens",
-      "Tokens are only numbers"
+      "The current token asking for relevant information",
+      "The dataset size",
+      "The number of epochs",
+      "The GPU memory"
     ],
-    "answer": "A word can be split into multiple tokens"
+    "answer": "The current token asking for relevant information"
   },
   {
-    "id": 42,
-    "question": "Why do models have a token limit?",
+    "id": 52,
+    "question": "What does the Key vector represent in attention?",
     "options": [
-      "Because models can process only a limited number of tokens at once",
-      "Because tokens are stored on the internet",
-      "Because tokens are deleted after training",
-      "Because tokens slow down GPUs"
+      "Information used to match with the query",
+      "The training algorithm",
+      "The model parameters",
+      "The token limit"
     ],
-    "answer": "Because models can process only a limited number of tokens at once"
+    "answer": "Information used to match with the query"
   },
   {
-    "id": 43,
-    "question": "Which type of tokenization is commonly used in modern LLMs?",
+    "id": 53,
+    "question": "What does the Value vector contain in the attention mechanism?",
     "options": [
-      "Subword tokenization",
-      "Paragraph tokenization",
-      "Image tokenization",
-      "File tokenization"
+      "The actual information passed forward after attention scoring",
+      "The number of tokens",
+      "The GPU speed",
+      "The dataset labels"
     ],
-    "answer": "Subword tokenization"
+    "answer": "The actual information passed forward after attention scoring"
   },
   {
-    "id": 44,
-    "question": "What happens to tokens after tokenization?",
+    "id": 54,
+    "question": "What is multi-head attention?",
     "options": [
-      "They are converted into numerical IDs",
-      "They are deleted from the text",
-      "They are converted into images",
-      "They are stored as audio"
+      "Using multiple attention mechanisms in parallel to capture different relationships",
+      "Using multiple datasets for training",
+      "Running models on multiple GPUs only",
+      "Using multiple tokenizers"
     ],
-    "answer": "They are converted into numerical IDs"
+    "answer": "Using multiple attention mechanisms in parallel to capture different relationships"
   },
   {
-    "id": 45,
-    "question": "Approximately how many tokens are in one English word on average?",
+    "id": 55,
+    "question": "Why is attention important for long sentences?",
     "options": [
-      "About 1 token per word",
-      "About 5 tokens per word",
-      "About 10 tokens per word",
-      "About 50 tokens per word"
+      "It helps the model track relationships between distant words",
+      "It increases internet speed",
+      "It reduces token count",
+      "It removes neural network layers"
     ],
-    "answer": "About 1 token per word"
+    "answer": "It helps the model track relationships between distant words"
   }
 ]
