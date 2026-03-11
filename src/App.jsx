@@ -18,60 +18,65 @@ export default function App() {
     localStorage.setItem('theme', dark ? 'dark' : 'light');
   }, [dark]);
 
-  function handleStart(name) {
-    setPlayerName(name);
-  }
-
-  function handleFinish(userAnswers) {
-    setAnswers(userAnswers);
-  }
-
-  function handleRestart() {
-    setPlayerName(null);
-    setAnswers(null);
-  }
-
   const toggle = (
-    <button className="theme-toggle" onClick={() => setDark((d) => !d)} title="Toggle theme">
-      {dark ? '☀︎' : '☾'}
+    <button
+      className="theme-toggle"
+      onClick={() => setDark((d) => !d)}
+      aria-label="Toggle theme"
+    >
+      <span className="toggle-icon">{dark ? '☀' : '☽'}</span>
     </button>
   );
 
   if (!playerName) {
     return (
-      <div className="app">
-        {toggle}
-        <StartScreen
-          quizTitle={quizConfig.title}
-          totalQuestions={questions.length}
-          onStart={handleStart}
-        />
+      <div className="shell">
+        <nav className="topbar">
+          <span className="brand">QuizPractice</span>
+          {toggle}
+        </nav>
+        <main className="main">
+          <StartScreen
+            quizTitle={quizConfig.title}
+            totalQuestions={questions.length}
+            onStart={setPlayerName}
+          />
+        </main>
       </div>
     );
   }
 
   if (answers) {
     return (
-      <div className="app">
-        {toggle}
-        <Results
-          quizTitle={quizConfig.title}
-          playerName={playerName}
-          questions={questions}
-          answers={answers}
-          googleSheetUrl={quizConfig.googleSheetUrl}
-          onRestart={handleRestart}
-        />
+      <div className="shell">
+        <nav className="topbar">
+          <span className="brand">QuizPractice</span>
+          {toggle}
+        </nav>
+        <main className="main">
+          <Results
+            quizTitle={quizConfig.title}
+            playerName={playerName}
+            questions={questions}
+            answers={answers}
+            googleSheetUrl={quizConfig.googleSheetUrl}
+            onRestart={() => { setPlayerName(null); setAnswers(null); }}
+          />
+        </main>
       </div>
     );
   }
 
   return (
-    <div className="app">
-      {toggle}
-      <h1 className="app-title">{quizConfig.title}</h1>
-      <p className="app-subtitle">{playerName} &middot; {questions.length} Questions</p>
-      <Quiz questions={questions} onFinish={handleFinish} />
+    <div className="shell">
+      <nav className="topbar">
+        <span className="brand">{quizConfig.title}</span>
+        <span className="topbar-meta">{playerName}</span>
+        {toggle}
+      </nav>
+      <main className="main">
+        <Quiz questions={questions} onFinish={setAnswers} />
+      </main>
     </div>
   );
 }

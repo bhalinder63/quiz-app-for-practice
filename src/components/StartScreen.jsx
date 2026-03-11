@@ -9,24 +9,29 @@ export default function StartScreen({ quizTitle, totalQuestions, onStart }) {
   }
 
   return (
-    <div className="start-screen">
-      <h1 className="app-title">{quizTitle}</h1>
-      <p className="app-subtitle">{totalQuestions} Questions</p>
+    <div className="start">
+      <div className="start-content">
+        <div className="start-badge">{totalQuestions} questions</div>
+        <h1 className="start-title">{quizTitle}</h1>
+        <p className="start-desc">
+          Test your knowledge. Enter your name below and press start when you are ready.
+        </p>
 
-      <form className="name-form" onSubmit={handleSubmit}>
-        <label htmlFor="player-name">Enter your name to begin</label>
-        <input
-          id="player-name"
-          type="text"
-          placeholder="Your name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          autoFocus
-        />
-        <button type="submit" disabled={!name.trim()}>
-          Start Quiz
-        </button>
-      </form>
+        <form className="start-form" onSubmit={handleSubmit}>
+          <div className="input-group">
+            <input
+              type="text"
+              placeholder="Your name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              autoFocus
+            />
+          </div>
+          <button className="btn btn-primary btn-lg" type="submit" disabled={!name.trim()}>
+            Start Quiz
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
