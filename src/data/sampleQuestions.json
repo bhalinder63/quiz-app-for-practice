@@ -1,107 +1,442 @@
 [
   {
-    "id": 46,
-    "question": "What is the main purpose of the attention mechanism in neural networks?",
+    "id": 1,
+    "question": "What is an economic sanction?",
     "options": [
-      "To focus on the most relevant parts of the input data",
-      "To increase internet speed",
-      "To reduce dataset size",
-      "To remove parameters"
+      "A trade restriction imposed by one country or group against another to influence behavior",
+      "A military alliance between nations",
+      "A diplomatic agreement to share resources",
+      "A financial subsidy given to developing nations"
     ],
-    "answer": "To focus on the most relevant parts of the input data"
+    "answer": "A trade restriction imposed by one country or group against another to influence behavior"
   },
   {
-    "id": 47,
-    "question": "In transformers, attention helps the model understand:",
+    "id": 2,
+    "question": "Which international body is most commonly associated with authorizing multilateral sanctions?",
     "options": [
-      "Relationships between different words in a sequence",
-      "Internet bandwidth",
-      "GPU temperature",
-      "Image resolution"
+      "The United Nations Security Council",
+      "The World Trade Organization",
+      "The International Monetary Fund",
+      "The World Health Organization"
     ],
-    "answer": "Relationships between different words in a sequence"
+    "answer": "The United Nations Security Council"
   },
   {
-    "id": 48,
-    "question": "Which architecture made the attention mechanism famous in NLP?",
-    "options": ["Transformer", "Decision Tree", "K-Means", "Naive Bayes"],
-    "answer": "Transformer"
+    "id": 3,
+    "question": "What is the difference between a sanction and a boycott?",
+    "options": [
+      "Sanctions are typically government-imposed measures; boycotts are voluntary refusals by individuals or groups to engage in trade or relations",
+      "Sanctions are always military; boycotts are always economic",
+      "Boycotts are imposed by governments; sanctions are led by citizens",
+      "There is no difference between the two"
+    ],
+    "answer": "Sanctions are typically government-imposed measures; boycotts are voluntary refusals by individuals or groups to engage in trade or relations"
   },
   {
-    "id": 49,
-    "question": "Self-attention allows a model to:",
+    "id": 4,
+    "question": "Which US government agency administers and enforces economic and trade sanctions?",
     "options": [
-      "Look at other words in the same sentence when processing a word",
-      "Ignore all other words",
-      "Delete tokens",
-      "Increase training data"
+      "Office of Foreign Assets Control (OFAC)",
+      "Federal Reserve Board",
+      "Securities and Exchange Commission (SEC)",
+      "Department of Homeland Security"
     ],
-    "answer": "Look at other words in the same sentence when processing a word"
+    "answer": "Office of Foreign Assets Control (OFAC)"
   },
   {
-    "id": 50,
-    "question": "Which components are used in the attention calculation?",
+    "id": 5,
+    "question": "What are 'targeted' or 'smart' sanctions?",
     "options": [
-      "Query, Key, and Value",
-      "Token, Layer, and Node",
-      "CPU, GPU, and RAM",
-      "Input, Output, and File"
+      "Sanctions directed at specific individuals, entities, or sectors rather than an entire country",
+      "Sanctions that automatically expire after one year",
+      "Sanctions applied only to military goods",
+      "Sanctions imposed by a single country without UN approval"
     ],
-    "answer": "Query, Key, and Value"
+    "answer": "Sanctions directed at specific individuals, entities, or sectors rather than an entire country"
   },
   {
-    "id": 51,
-    "question": "What does the Query vector represent in attention?",
+    "id": 6,
+    "question": "What is a 'secondary sanction'?",
     "options": [
-      "The current token asking for relevant information",
-      "The dataset size",
-      "The number of epochs",
-      "The GPU memory"
+      "A sanction that penalizes third-party countries or entities for doing business with a sanctioned nation",
+      "A sanction imposed by a secondary power with less global influence",
+      "A sanction that applies only to secondary goods like luxury items",
+      "A sanction enacted after a primary sanction fails"
     ],
-    "answer": "The current token asking for relevant information"
+    "answer": "A sanction that penalizes third-party countries or entities for doing business with a sanctioned nation"
   },
   {
-    "id": 52,
-    "question": "What does the Key vector represent in attention?",
+    "id": 7,
+    "question": "Which of the following best describes an arms embargo?",
     "options": [
-      "Information used to match with the query",
-      "The training algorithm",
-      "The model parameters",
-      "The token limit"
+      "A prohibition on the sale or transfer of weapons and military equipment to a specific country",
+      "A ban on importing agricultural products",
+      "A freeze on diplomatic relations between two nations",
+      "A restriction on travel by government officials"
     ],
-    "answer": "Information used to match with the query"
+    "answer": "A prohibition on the sale or transfer of weapons and military equipment to a specific country"
   },
   {
-    "id": 53,
-    "question": "What does the Value vector contain in the attention mechanism?",
+    "id": 8,
+    "question": "What is 'asset freezing' in the context of sanctions?",
     "options": [
-      "The actual information passed forward after attention scoring",
-      "The number of tokens",
-      "The GPU speed",
-      "The dataset labels"
+      "Blocking a designated individual's or entity's funds and economic resources so they cannot be accessed or moved",
+      "Reducing the interest rates on foreign loans",
+      "Seizing physical goods at a country's border",
+      "Suspending a nation's voting rights at the UN"
     ],
-    "answer": "The actual information passed forward after attention scoring"
+    "answer": "Blocking a designated individual's or entity's funds and economic resources so they cannot be accessed or moved"
   },
   {
-    "id": 54,
-    "question": "What is multi-head attention?",
+    "id": 9,
+    "question": "The Arab League boycott of Israel, beginning in 1948, is an example of which type of boycott structure?",
     "options": [
-      "Using multiple attention mechanisms in parallel to capture different relationships",
-      "Using multiple datasets for training",
-      "Running models on multiple GPUs only",
-      "Using multiple tokenizers"
+      "A primary, secondary, and tertiary boycott targeting Israel and companies doing business with it",
+      "A unilateral military embargo",
+      "A WTO-sanctioned trade restriction",
+      "A consumer-led grassroots boycott"
     ],
-    "answer": "Using multiple attention mechanisms in parallel to capture different relationships"
+    "answer": "A primary, secondary, and tertiary boycott targeting Israel and companies doing business with it"
   },
   {
-    "id": 55,
-    "question": "Why is attention important for long sentences?",
+    "id": 10,
+    "question": "What does 'de-listing' mean in sanctions terminology?",
     "options": [
-      "It helps the model track relationships between distant words",
-      "It increases internet speed",
-      "It reduces token count",
-      "It removes neural network layers"
+      "Removing an individual or entity from a sanctions list, restoring their ability to conduct normal transactions",
+      "Adding a new country to the UN blacklist",
+      "Downgrading a sanction from comprehensive to sectoral",
+      "Transferring sanctioned assets to a neutral third party"
     ],
-    "answer": "It helps the model track relationships between distant words"
+    "answer": "Removing an individual or entity from a sanctions list, restoring their ability to conduct normal transactions"
+  },
+  {
+    "id": 11,
+    "question": "Which of the following is an example of a comprehensive (country-wide) sanction program?",
+    "options": [
+      "The US embargo against Cuba",
+      "The FATF grey-listing of a country",
+      "The WTO dispute settlement mechanism",
+      "The IMF structural adjustment program"
+    ],
+    "answer": "The US embargo against Cuba"
+  },
+  {
+    "id": 12,
+    "question": "What is 'sanctions evasion'?",
+    "options": [
+      "Attempts to circumvent sanctions through methods such as front companies, shell entities, or falsified documentation",
+      "Legally applying for a sanctions exemption through official channels",
+      "A government's decision not to renew expired sanctions",
+      "A diplomatic protest against sanctions imposed by another country"
+    ],
+    "answer": "Attempts to circumvent sanctions through methods such as front companies, shell entities, or falsified documentation"
+  },
+  {
+    "id": 13,
+    "question": "What is the SDN (Specially Designated Nationals) list?",
+    "options": [
+      "A US OFAC list of individuals and entities whose assets are blocked and with whom US persons are generally prohibited from dealing",
+      "A UN list of countries eligible for development aid",
+      "An EU register of approved financial institutions",
+      "A WTO list of nations with most-favoured-nation trading status"
+    ],
+    "answer": "A US OFAC list of individuals and entities whose assets are blocked and with whom US persons are generally prohibited from dealing"
+  },
+  {
+    "id": 14,
+    "question": "What is a 'General License' in the context of sanctions compliance?",
+    "options": [
+      "An authorization that permits certain categories of transactions that would otherwise be prohibited under a sanctions program",
+      "A permit granted to export controlled goods to any country",
+      "A blanket exemption from all UN sanctions obligations",
+      "A government-issued trading certificate for sanctioned commodities"
+    ],
+    "answer": "An authorization that permits certain categories of transactions that would otherwise be prohibited under a sanctions program"
+  },
+  {
+    "id": 15,
+    "question": "Which term describes sanctions imposed by a single country without multilateral agreement?",
+    "options": [
+      "Unilateral sanctions",
+      "Extraterritorial sanctions",
+      "Bilateral sanctions",
+      "Reciprocal sanctions"
+    ],
+    "answer": "Unilateral sanctions"
+  },
+  {
+    "id": 16,
+    "question": "In trade finance, what is a bank's primary obligation when a sanctions hit occurs on a transaction?",
+    "options": [
+      "To block the transaction, freeze the funds, and report to the relevant regulatory authority",
+      "To immediately return funds to the originating bank without reporting",
+      "To complete the transaction and notify the customer afterward",
+      "To request a waiver from the correspondent bank"
+    ],
+    "answer": "To block the transaction, freeze the funds, and report to the relevant regulatory authority"
+  },
+  {
+    "id": 17,
+    "question": "What does 'ownership and control' mean in sanctions screening?",
+    "options": [
+      "A sanctioned person owning 50% or more of an entity means that entity is also considered sanctioned, even if not explicitly listed",
+      "The requirement that all sanctioned goods must be controlled at the point of export",
+      "A rule that only entities directly named on a sanctions list are restricted",
+      "A standard requiring banks to control their own internal sanctions lists"
+    ],
+    "answer": "A sanctioned person owning 50% or more of an entity means that entity is also considered sanctioned, even if not explicitly listed"
+  },
+  {
+    "id": 18,
+    "question": "Which of the following is NOT a typical ground for imposing international sanctions?",
+    "options": [
+      "A country winning a free and fair democratic election",
+      "Proliferation of weapons of mass destruction",
+      "Gross human rights violations",
+      "State-sponsored terrorism"
+    ],
+    "answer": "A country winning a free and fair democratic election"
+  },
+  {
+    "id": 19,
+    "question": "What is the BDS movement?",
+    "options": [
+      "A global campaign calling for Boycott, Divestment, and Sanctions against Israel over its treatment of Palestinians",
+      "A Basel Committee directive on bank supervisory standards",
+      "A WTO framework for Bilateral Dispute Settlement",
+      "A UN initiative for Border Development and Security"
+    ],
+    "answer": "A global campaign calling for Boycott, Divestment, and Sanctions against Israel over its treatment of Palestinians"
+  },
+  {
+    "id": 20,
+    "question": "Which of the following best describes 'correspondent banking risk' in the context of sanctions?",
+    "options": [
+      "The risk that a correspondent bank processes transactions on behalf of a respondent bank that involve sanctioned parties, exposing both banks to penalties",
+      "The risk that a correspondent bank charges excessive fees",
+      "The risk of currency fluctuation in cross-border transactions",
+      "The risk that a correspondent bank fails to maintain adequate capital ratios"
+    ],
+    "answer": "The risk that a correspondent bank processes transactions on behalf of a respondent bank that involve sanctioned parties, exposing both banks to penalties"
+  },
+  {
+    "id": 21,
+    "question": "What does PNR stand for in US sanctions compliance?",
+    "options": [
+      "Prohibited Non-Resident",
+      "Prompt No-Action Relief",
+      "Prohibited Non-US Person Rule",
+      "Penalty Notice and Reporting"
+    ],
+    "answer": "Prompt No-Action Relief"
+  },
+  {
+    "id": 22,
+    "question": "In the context of US bank sanctions compliance, what is a 'Specific License'?",
+    "options": [
+      "An OFAC-issued authorization permitting a particular transaction or category of transactions otherwise prohibited under a sanctions program",
+      "A Federal Reserve permit for cross-border wire transfers",
+      "A FinCEN license for operating a money services business",
+      "A bank charter issued by the OCC for international operations"
+    ],
+    "answer": "An OFAC-issued authorization permitting a particular transaction or category of transactions otherwise prohibited under a sanctions program"
+  },
+  {
+    "id": 23,
+    "question": "What is the 'No Action Letter' process at OFAC?",
+    "options": [
+      "A formal OFAC response indicating it will not take enforcement action against a specific proposed transaction or activity",
+      "A letter from a US bank confirming it has taken no action on a suspicious transaction",
+      "A FinCEN directive instructing banks not to file a SAR",
+      "A DOJ notification that a criminal investigation has been closed"
+    ],
+    "answer": "A formal OFAC response indicating it will not take enforcement action against a specific proposed transaction or activity"
+  },
+  {
+    "id": 24,
+    "question": "Under OFAC regulations, what must a US bank do when it identifies a transaction involving a blocked party?",
+    "options": [
+      "Block the transaction, hold the funds in a segregated interest-bearing account, and file a Blocked Assets Report with OFAC within 10 business days",
+      "Return the funds immediately to the sender and notify the FBI",
+      "Complete the transaction and file a SAR with FinCEN within 30 days",
+      "Escalate to the Federal Reserve and await further instructions"
+    ],
+    "answer": "Block the transaction, hold the funds in a segregated interest-bearing account, and file a Blocked Assets Report with OFAC within 10 business days"
+  },
+  {
+    "id": 25,
+    "question": "What is a 'Rejected Transaction' under OFAC rules, and how does it differ from a 'Blocked Transaction'?",
+    "options": [
+      "A rejected transaction is one refused and returned because it violates sanctions but does not involve a blocked party; a blocked transaction involves a designated party whose funds must be frozen",
+      "A rejected transaction involves a blocked party; a blocked transaction is returned to sender",
+      "There is no difference — both terms are used interchangeably by OFAC",
+      "A rejected transaction requires a SAR filing; a blocked transaction does not"
+    ],
+    "answer": "A rejected transaction is one refused and returned because it violates sanctions but does not involve a blocked party; a blocked transaction involves a designated party whose funds must be frozen"
+  },
+  {
+    "id": 26,
+    "question": "What does the PAR clause stand for in international trade finance used by US banks?",
+    "options": [
+      "Prohibited Activities Restriction",
+      "Payment After Receipt",
+      "Prior Approval Required",
+      "Prohibited Asset Rule"
+    ],
+    "answer": "Prior Approval Required"
+  },
+  {
+    "id": 27,
+    "question": "In a letter of credit governed by a US bank, what does the NPAR (Non-Payment After Refusal) clause typically address?",
+    "options": [
+      "The bank's right to refuse payment under an LC if the underlying transaction is found to violate applicable sanctions regulations, even if documents are compliant on their face",
+      "The importer's right to refuse payment if goods are defective upon arrival",
+      "A clause allowing negotiating banks to defer payment pending compliance review",
+      "A UCP 600 provision for disputed discrepancies in documentary credits"
+    ],
+    "answer": "The bank's right to refuse payment under an LC if the underlying transaction is found to violate applicable sanctions regulations, even if documents are compliant on their face"
+  },
+  {
+    "id": 28,
+    "question": "Which US law gives OFAC its primary authority to administer and enforce economic sanctions?",
+    "options": [
+      "The International Emergency Economic Powers Act (IEEPA)",
+      "The Bank Secrecy Act (BSA)",
+      "The Foreign Corrupt Practices Act (FCPA)",
+      "The Dodd-Frank Wall Street Reform Act"
+    ],
+    "answer": "The International Emergency Economic Powers Act (IEEPA)"
+  },
+  {
+    "id": 29,
+    "question": "Under OFAC's civil penalty framework, what standard applies to most sanctions violations?",
+    "options": [
+      "Strict liability — a sanctions violation can result in a civil penalty even if the party did not know or have reason to know it was engaging in a prohibited transaction",
+      "Negligence — penalties only apply if the bank failed to exercise reasonable care",
+      "Intent-based liability — only willful violations are subject to civil penalties",
+      "Proportional liability — penalties are capped at the value of the transaction"
+    ],
+    "answer": "Strict liability — a sanctions violation can result in a civil penalty even if the party did not know or have reason to know it was engaging in a prohibited transaction"
+  },
+  {
+    "id": 30,
+    "question": "What is 'voluntary self-disclosure' in OFAC enforcement, and why is it significant for US banks?",
+    "options": [
+      "A bank voluntarily reporting its own sanctions violation to OFAC, which can result in a reduction of up to 50% in the base civil penalty amount",
+      "A bank disclosing its sanctions screening vendor to federal regulators",
+      "A customer voluntarily providing beneficial ownership information to a bank",
+      "A bank reporting a competitor's suspected sanctions breach to OFAC"
+    ],
+    "answer": "A bank voluntarily reporting its own sanctions violation to OFAC, which can result in a reduction of up to 50% in the base civil penalty amount"
+  },
+  {
+    "id": 31,
+    "question": "What is the '50 Percent Rule' enforced by OFAC?",
+    "options": [
+      "An entity owned 50% or more in aggregate by one or more SDNs is itself treated as blocked, regardless of whether it is explicitly named on the SDN list",
+      "A bank must screen at least 50% of its transactions against the SDN list daily",
+      "Civil penalties are automatically reduced by 50% for first-time violations",
+      "A sanction is lifted if 50% of UN Security Council members vote for removal"
+    ],
+    "answer": "An entity owned 50% or more in aggregate by one or more SDNs is itself treated as blocked, regardless of whether it is explicitly named on the SDN list"
+  },
+  {
+    "id": 32,
+    "question": "In correspondent banking, what is 'stripping' in the context of sanctions evasion?",
+    "options": [
+      "The illegal practice of removing or altering identifying information about a sanctioned party from a payment message before transmitting it through a US bank",
+      "Reducing the face value of a letter of credit to avoid sanctions thresholds",
+      "Removing collateral from a sanctioned entity's loan agreement",
+      "Splitting large transactions into smaller ones to evade screening"
+    ],
+    "answer": "The illegal practice of removing or altering identifying information about a sanctioned party from a payment message before transmitting it through a US bank"
+  },
+  {
+    "id": 33,
+    "question": "What is a 'U-turn' transaction in US sanctions regulations?",
+    "options": [
+      "A transaction that originates and ends outside the US but passes through a US bank, which was previously allowed for certain sanctioned countries like Iran but has since been revoked",
+      "A wire transfer that is reversed after a sanctions hit is identified",
+      "A back-to-back LC structure used to obscure the origin of funds",
+      "A transaction where a US bank re-routes funds to avoid a sanctioned jurisdiction"
+    ],
+    "answer": "A transaction that originates and ends outside the US but passes through a US bank, which was previously allowed for certain sanctioned countries like Iran but has since been revoked"
+  },
+  {
+    "id": 34,
+    "question": "Under US sanctions, which of the following transactions by a US bank would most likely require an OFAC license?",
+    "options": [
+      "Processing a trade finance transaction for an entity partially owned by a party on the SDN list",
+      "Executing a domestic wire transfer between two US corporations",
+      "Opening a checking account for a Canadian citizen residing in the US",
+      "Issuing a standby letter of credit in favour of a UK-based beneficiary"
+    ],
+    "answer": "Processing a trade finance transaction for an entity partially owned by a party on the SDN list"
+  },
+  {
+    "id": 35,
+    "question": "What is 'due diligence' specifically required of US banks regarding sanctions in a correspondent banking relationship?",
+    "options": [
+      "Assessing the respondent bank's own sanctions compliance program, its customer base, and the jurisdictions it operates in to evaluate the level of sanctions risk it poses",
+      "Verifying that the correspondent bank is listed on the Federal Reserve's approved institution registry",
+      "Ensuring the correspondent bank files quarterly sanctions reports with FinCEN",
+      "Confirming the correspondent bank holds a minimum capital adequacy ratio of 8%"
+    ],
+    "answer": "Assessing the respondent bank's own sanctions compliance program, its customer base, and the jurisdictions it operates in to evaluate the level of sanctions risk it poses"
+  },
+  {
+    "id": 36,
+    "question": "Which of the following best describes 'concurrent jurisdiction' in US sanctions enforcement?",
+    "options": [
+      "Multiple US agencies — such as OFAC, DOJ, and FinCEN — can simultaneously investigate and penalize a bank for sanctions and related AML violations arising from the same conduct",
+      "US sanctions apply concurrently with UN sanctions but not EU sanctions",
+      "OFAC and the Federal Reserve share joint authority to approve all international wire transfers",
+      "Civil and criminal penalties for sanctions violations must be imposed at the same time"
+    ],
+    "answer": "Multiple US agencies — such as OFAC, DOJ, and FinCEN — can simultaneously investigate and penalize a bank for sanctions and related AML violations arising from the same conduct"
+  },
+  {
+    "id": 37,
+    "question": "In a US bank's sanctions compliance program, what does a 'risk-based approach' mean?",
+    "options": [
+      "Allocating compliance resources and controls proportionate to the level of sanctions risk posed by customers, products, geographies, and transaction types",
+      "Screening only high-value transactions above a defined dollar threshold",
+      "Applying enhanced due diligence exclusively to transactions involving Iran and North Korea",
+      "Outsourcing sanctions screening entirely to a third-party vendor"
+    ],
+    "answer": "Allocating compliance resources and controls proportionate to the level of sanctions risk posed by customers, products, geographies, and transaction types"
+  },
+  {
+    "id": 38,
+    "question": "What is the significance of the 'knowledge' standard in US secondary sanctions exposure for non-US banks?",
+    "options": [
+      "Non-US banks can face secondary sanctions if they knowingly facilitate significant transactions for sanctioned parties, even if the transaction has no direct US nexus",
+      "Secondary sanctions only apply when a non-US bank has actual written knowledge of the sanctioned party's identity",
+      "The knowledge standard exempts non-US banks from secondary sanctions if they rely on customer-provided documentation",
+      "Secondary sanctions against non-US banks require proof of wilful intent beyond a reasonable doubt"
+    ],
+    "answer": "Non-US banks can face secondary sanctions if they knowingly facilitate significant transactions for sanctioned parties, even if the transaction has no direct US nexus"
+  },
+  {
+    "id": 39,
+    "question": "Under OFAC guidance, which five pillars form the foundation of an effective sanctions compliance program for US financial institutions?",
+    "options": [
+      "Management commitment, risk assessment, internal controls, testing and auditing, and training",
+      "Customer onboarding, transaction monitoring, SAR filing, staff training, and board reporting",
+      "KYC, AML, sanctions screening, correspondent due diligence, and regulatory reporting",
+      "OFAC registration, annual audit, staff certification, policy documentation, and regulator liaison"
+    ],
+    "answer": "Management commitment, risk assessment, internal controls, testing and auditing, and training"
+  },
+  {
+    "id": 40,
+    "question": "In a US bank-issued letter of credit, if the beneficiary is subsequently found to be an SDN after the LC is issued but before payment, what is the correct course of action?",
+    "options": [
+      "Block payment, freeze any funds already held, file a Blocked Assets Report with OFAC, and seek a specific license if payment is to be authorised",
+      "Honour the LC since it was issued before the beneficiary was designated",
+      "Reject the documents on grounds of discrepancy and return them to the beneficiary",
+      "Transfer the LC to a non-sanctioned substitute beneficiary with customer consent"
+    ],
+    "answer": "Block payment, freeze any funds already held, file a Blocked Assets Report with OFAC, and seek a specific license if payment is to be authorised"
   }
 ]
