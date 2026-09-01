@@ -3,6 +3,26 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.bg-mesh {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(600px circle at 15% 20%, rgba(124,58,237,0.16), transparent 60%),
+    radial-gradient(520px circle at 85% 12%, rgba(168,85,247,0.14), transparent 60%),
+    radial-gradient(700px circle at 50% 95%, rgba(52,211,153,0.08), transparent 60%);
+  filter: blur(50px);
+}
+
+:root[data-theme="dark"] .bg-mesh {
+  background:
+    radial-gradient(600px circle at 15% 20%, rgba(167,139,250,0.14), transparent 60%),
+    radial-gradient(520px circle at 85% 12%, rgba(139,92,246,0.18), transparent 60%),
+    radial-gradient(700px circle at 50% 95%, rgba(52,211,153,0.06), transparent 60%);
 }
 
 .topbar {
@@ -12,7 +32,7 @@
   padding: 0 1.5rem;
   height: 56px;
   border-bottom: 1px solid var(--c-border);
-  background: var(--c-surface);
+  background: color-mix(in srgb, var(--c-surface) 75%, transparent);
   position: sticky;
   top: 0;
   z-index: 50;
@@ -37,8 +57,8 @@
 }
 
 .theme-toggle {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   border: 1px solid var(--c-border);
   border-radius: 10px;
   background: var(--c-surface-2);
@@ -54,7 +74,7 @@
   color: var(--c-text-1);
 }
 
-.toggle-icon { font-size: 1rem; line-height: 1; }
+.toggle-icon { display: block; }
 
 .main {
   flex: 1;
@@ -83,6 +103,13 @@
 .btn:disabled {
   opacity: 0.3;
   cursor: not-allowed;
+}
+
+.btn:focus-visible,
+.opt:focus-visible,
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--c-primary);
+  outline-offset: 2px;
 }
 
 .btn-primary {
@@ -217,7 +244,6 @@
 }
 
 .quiz-body {
-  animation: fadeUp 0.25s ease;
   margin-bottom: 2.5rem;
 }
 
@@ -242,9 +268,11 @@
   gap: 0.85rem;
   width: 100%;
   padding: 0.9rem 1rem;
-  border: 1.5px solid var(--c-border);
+  border: 1.5px solid color-mix(in srgb, var(--c-border) 85%, transparent);
   border-radius: 12px;
-  background: var(--c-surface);
+  background: color-mix(in srgb, var(--c-surface) 72%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: var(--c-text-2);
   font-size: 0.9rem;
   font-family: inherit;
@@ -390,7 +418,10 @@
 .stat {
   text-align: center;
   padding: 1rem 0.5rem;
-  background: var(--c-surface-2);
+  background: color-mix(in srgb, var(--c-surface-2) 70%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid color-mix(in srgb, var(--c-border) 60%, transparent);
   border-radius: 12px;
 }
 
@@ -434,10 +465,12 @@
 }
 
 .review-card {
-  border: 1px solid var(--c-border);
+  border: 1px solid color-mix(in srgb, var(--c-border) 85%, transparent);
   border-radius: 12px;
   padding: 1rem;
-  background: var(--c-surface);
+  background: color-mix(in srgb, var(--c-surface) 70%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .review-q {
@@ -456,7 +489,7 @@
 
 .review-ans {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.5rem;
   font-size: 0.82rem;
   padding: 0.5rem 0.7rem;
@@ -475,10 +508,7 @@
 }
 
 .review-icon {
-  font-weight: 800;
   flex-shrink: 0;
-  font-size: 0.75rem;
-  margin-top: 2px;
 }
 
 .perfect {
@@ -497,7 +527,7 @@
 }
 
 .perfect-icon {
-  font-size: 1.1rem;
+  flex-shrink: 0;
 }
 
 .results-btn {

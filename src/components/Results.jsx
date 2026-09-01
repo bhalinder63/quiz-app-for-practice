@@ -1,7 +1,12 @@
 import { useEffect, useRef, useMemo } from 'react';
+// eslint-disable-next-line no-unused-vars -- `motion` is used via JSX member expressions (<motion.button>, <motion.circle>, <motion.span>)
+import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
+import { X, Check, Star } from 'lucide-react';
+import confetti from 'canvas-confetti';
 
 export default function Results({ quizTitle, playerName, questions, answers, googleSheetUrl, onRestart }) {
   const saved = useRef(false);
+  const celebrated = useRef(false);
   const total = questions.length;
 
   const { correct, incorrect, details, percentage } = useMemo(() => {
@@ -46,19 +51,45 @@ export default function Results({ quizTitle, playerName, questions, answers, goo
   const circumference = 2 * Math.PI * 54;
   const offset = circumference - (percentage / 100) * circumference;
 
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, (v) => Math.round(v));
+
+  useEffect(() => {
+    const controls = animate(count, percentage, { duration: 1.2, ease: [0.4, 0, 0.2, 1] });
+    return controls.stop;
+  }, [count, percentage]);
+
+  useEffect(() => {
+    if (celebrated.current || grade !== 'Excellent') return;
+    celebrated.current = true;
+    const timer = setTimeout(() => {
+      confetti({
+        particleCount: 120,
+        spread: 80,
+        startVelocity: 38,
+        origin: { y: 0.35 },
+        colors: ['#7c3aed', '#a855f7', '#34d399', '#fbbf24'],
+      });
+    }, 350);
+    return () => clearTimeout(timer);
+  }, [grade]);
+
   return (
     <div className="results">
       <div className="results-hero">
         <div className={`ring ring--${gradeClass}`}>
           <svg viewBox="0 0 120 120">
             <circle cx="60" cy="60" r="54" className="ring-track" />
-            <circle cx="60" cy="60" r="54" className="ring-value"
+            <motion.circle
+              cx="60" cy="60" r="54" className="ring-value"
               strokeDasharray={circumference}
-              strokeDashoffset={offset}
+              initial={{ strokeDashoffset: circumference }}
+              animate={{ strokeDashoffset: offset }}
+              transition={{ duration: 1.2, ease: [0.4, 0, 0.2, 1] }}
             />
           </svg>
           <div className="ring-label">
-            <span className="ring-pct">{percentage}</span>
+            <motion.span className="ring-pct">{rounded}</motion.span>
             <span className="ring-pct-sign">%</span>
           </div>
         </div>
@@ -91,11 +122,11 @@ export default function Results({ quizTitle, playerName, questions, answers, goo
                 <p className="review-q">{item.question}</p>
                 <div className="review-answers">
                   <div className="review-ans review-ans--wrong">
-                    <span className="review-icon">✕</span>
+                    <X className="review-icon" size={14} strokeWidth={3} />
                     <span>{item.yourAnswer}</span>
                   </div>
                   <div className="review-ans review-ans--right">
-                    <span className="review-icon">✓</span>
+                    <Check className="review-icon" size={14} strokeWidth={3} />
                     <span>{item.correctAnswer}</span>
                   </div>
                 </div>
@@ -107,14 +138,19 @@ export default function Results({ quizTitle, playerName, questions, answers, goo
 
       {incorrect.length === 0 && (
         <div className="perfect">
-          <span className="perfect-icon">★</span>
+          <Star className="perfect-icon" size={18} strokeWidth={2.5} fill="currentColor" />
           Perfect score — every answer was correct.
         </div>
       )}
 
-      <button className="btn btn-primary btn-lg results-btn" onClick={onRestart}>
+      <motion.button
+        className="btn btn-primary btn-lg results-btn"
+        whileTap={{ scale: 0.97 }}
+        transition={{ type: 'spring', stiffness: 500, damping: 30 }}
+        onClick={onRestart}
+      >
         Retake Quiz
-      </button>
+      </motion.button>
     </div>
   );
 }

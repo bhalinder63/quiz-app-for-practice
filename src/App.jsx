@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Sun, Moon } from 'lucide-react';
 import StartScreen from './components/StartScreen';
 import Quiz from './components/Quiz';
 import Results from './components/Results';
@@ -24,59 +25,50 @@ export default function App() {
       onClick={() => setDark((d) => !d)}
       aria-label="Toggle theme"
     >
-      <span className="toggle-icon">{dark ? '☀' : '☽'}</span>
+      {dark
+        ? <Sun className="toggle-icon" size={18} strokeWidth={2.25} />
+        : <Moon className="toggle-icon" size={18} strokeWidth={2.25} />}
     </button>
   );
 
-  if (!playerName) {
-    return (
-      <div className="shell">
-        <nav className="topbar">
-          <span className="brand">QuizPractice</span>
-          {toggle}
-        </nav>
-        <main className="main">
-          <StartScreen
-            quizTitle={quizConfig.title}
-            totalQuestions={questions.length}
-            onStart={setPlayerName}
-          />
-        </main>
-      </div>
-    );
-  }
+  let brand = 'QuizPractice';
+  let meta = null;
+  let content;
 
-  if (answers) {
-    return (
-      <div className="shell">
-        <nav className="topbar">
-          <span className="brand">QuizPractice</span>
-          {toggle}
-        </nav>
-        <main className="main">
-          <Results
-            quizTitle={quizConfig.title}
-            playerName={playerName}
-            questions={questions}
-            answers={answers}
-            googleSheetUrl={quizConfig.googleSheetUrl}
-            onRestart={() => { setPlayerName(null); setAnswers(null); }}
-          />
-        </main>
-      </div>
+  if (!playerName) {
+    content = (
+      <StartScreen
+        quizTitle={quizConfig.title}
+        totalQuestions={questions.length}
+        onStart={setPlayerName}
+      />
     );
+  } else if (answers) {
+    content = (
+      <Results
+        quizTitle={quizConfig.title}
+        playerName={playerName}
+        questions={questions}
+        answers={answers}
+        googleSheetUrl={quizConfig.googleSheetUrl}
+        onRestart={() => { setPlayerName(null); setAnswers(null); }}
+      />
+    );
+  } else {
+    brand = quizConfig.title;
+    meta = playerName;
+    content = <Quiz questions={questions} onFinish={setAnswers} />;
   }
 
   return (
     <div className="shell">
+      <div className="bg-mesh" aria-hidden="true" />
       <nav className="topbar">
-        <span className="brand">{quizConfig.title}</span>
-        <span className="topbar-meta">{playerName}</span>
+        <span className="brand">{brand}</span>
+        {meta && <span className="topbar-meta">{meta}</span>}
         {toggle}
       </nav>
-      <main className="main">
-        <Quiz questions={questions} onFinish={setAnswers} />
-      </main>
+      <main className="main">{content}</main>
     </div>
   );
 }
